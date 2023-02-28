@@ -1,96 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root {
+  --texto-padrao: #ffffff;
+  --fundo-padrao: #170132;
+  color: var(--fundo-padrao);
+}
+a {
+  color: var(--texto-padrao);
+}
 body {
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 header {
-    background-color: #170132;
-    padding: 30px;
-    border-radius: 30px
+  padding: 20px;
+  background-color: var(--fundo-padrao);
+  padding: 30px;
+  border-radius: 30px;
 }
 .foto {
-    float: left;
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
-    border-radius: 50%;
-
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  border-radius: 50%;
 }
 .foto img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 .info {
-    overflow: auto;
+  overflow: auto;
 }
 h1 {
-    margin: 0;
-    font-size: 36px;
-    color: aliceblue
+  margin: 0;
+  font-size: 36px;
+  color: var(--texto-padrao);
 }
 p {
-    margin: 0;
-    font-size: 18px;
-    color: aliceblue
+  margin: 0;
+  font-size: 18px;
+  color: var(--texto-padrao);
 }
 .contato {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .contato p {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .textbox1 {
-    background-color: #170132;
-    margin-top: 15px;
-    padding: 15px;
-    border-radius: 30px
-
+  background-color: var(--fundo-padrao);
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 30px;
 }
 .textbox2 {
-    background-color: #170132;
-    margin-top: 15px;
-    padding: 15px;
-    border-radius: 30px
+  background-color: var(--fundo-padrao);
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 30px;
 }
 .textbox3 {
-    background-color: #170132;
-    margin-top: 15px;
-    padding: 15px;
-    border-radius: 30px
+  background-color: #170132;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 30px;
 }
 .experience h2 {
-    margin-top: 1px;
-    color: #ffffff;
+  margin-top: 1px;
+  color: #ffffff;
 }
 .experience h3 {
-    margin-top: 1px;
-    color: #ffffff;
+  margin-top: 1px;
+  color: #ffffff;
 }
 .experience h4 {
-    margin-top: 30px;
-    color: #ffffff;
+  margin-top: 30px;
+  color: #ffffff;
 }
 .experience p {
-    margin-top: 1px;
-    color: #ffffff;
+  margin-top: 1px;
+  color: #ffffff;
 }
 .experience ul {
-    margin-top: 1px;
-    color: #ffffff;
+  margin-top: 1px;
+  color: #ffffff;
 }
 
 table {
-    background-color: #170132;
-    margin-top: 10px;
-    border-collapse: collapse;
-    width: 100%;
+  background-color: #170132;
+  margin-top: 10px;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-th, td {
-    border: 1px solid black;
-    text-align: left;
-    color: #ffffff;
-    padding: 8px;
+thead {
+  background-color: #170132;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+caption {
+  background-color: #170132;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+th,
+td {
+  text-align: left;
+  color: #ffffff;
+  padding: 8px;
 }
 
 th {
-    background-color: #170132;
+  background-color: #170132;
+}
+
+h2 {
+  border-left: 13px solid #f47c04;
+  padding-left: 10px;
+}
+.info-lad-a-lado {
+  display: flex;
+  justify-content: space-between;
+}
+.info-lad-a-lado > .experience {
+  flex-grow: 2;
+  flex-shrink: 1;
 }
