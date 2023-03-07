@@ -22,17 +22,23 @@ a{
   transition: all ease-in-out 0.5;
 }
 .area-dados:hover{
-  background-color: #45239454;
+  background-color: #42219054;
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px 15px #ccc;
-  color: var(--fundo-padrao);
-  transition: all ease-in-out 0.5;
+  transition: all 0.5s ease-in-out;
 }
 .area-dados > h2 {
-  border-left: 20px solid #000000;
+  border-left: 20px solid #fd971b;
   color: var(--texto-padrao);
   padding-left: 10px;
   transition: all ease-in-out 0.5s;
+}
+.area-dados > div > p {
+  color: var(--texto-padrao);
+  font-size: 18px;
+  display: flex;
+  margin: 10px;
+  padding: 20px;
 }
 .area-dados:hover > h2 {
   border-left-color: #ffffff;
@@ -48,7 +54,7 @@ a{
   width: 150px;
   height: 150px;
 }
-#dados-pessoais > div > div {
+.area-dados > div > div {
   margin-left: 50px;
   text-align: center;
 }
@@ -66,6 +72,8 @@ a{
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: space-between;
+  color: var(--texto-padrao);
 }
 #conhecimentos > ul > li {
   list-style: none;
